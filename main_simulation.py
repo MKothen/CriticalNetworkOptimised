@@ -254,8 +254,8 @@ for i_idx, imid_val_nA in enumerate(Imid_values_nA):
                 mean_iei_seconds = calculate_average_iei(SpikeMon_exc, analysis_start)
 
                 if mean_iei_seconds and mean_iei_seconds > 0:
-                    adaptive_bin_width_seconds = 2 * mean_iei_seconds
-                    print(f"  Adaptive bin width: {adaptive_bin_width_seconds*1000:.2f} ms (2xIEI)")
+                    adaptive_bin_width_seconds = mean_iei_seconds
+                    print(f"  Adaptive bin width: {adaptive_bin_width_seconds*1000:.2f}")
 
                     relevant_spikes = SpikeMon_exc.t[SpikeMon_exc.t >= analysis_start]
                     spike_times_for_analysis = np.asarray(relevant_spikes / second)
