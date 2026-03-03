@@ -107,8 +107,8 @@ QUICKNESS_FIXED_SAMPLE_SIZE = 100          # Sample size for fixed accuracy metr
 # ============================================================================
 # EXPERIMENTAL DESIGN PARAMETERS
 # ============================================================================
-Imid_values_nA = np.linspace(0.1, 0.5, 5)         # Input current values to test
-EI_ratio_values = np.linspace(0.001, 1.0, 15)  # E/I ratio conditions
+Imid_values_nA = np.array([0.3333])         # Input current values to test
+EI_ratio_values = np.array([0.001, 0.385, 1.0])  # E/I ratio conditions
 NUM_REPETITIONS = 8                        # Number of repetitions per condition
 EXC_FACTOR_FIXED = 1.0
 
@@ -117,7 +117,7 @@ EXC_FACTOR_FIXED = 1.0
 # ============================================================================
 # When True: skip RC task, use linspace parameters below, minimal monitors
 # When False: standard RC mode with original parameters above
-SWEEP_ONLY_MODE = False
+SWEEP_ONLY_MODE = True
 
 # Sweep-specific parameter grid (used only when SWEEP_ONLY_MODE = True)
 SWEEP_Imid_values_nA = np.linspace(0.1, 0.5, 5)
