@@ -117,7 +117,7 @@ EXC_FACTOR_FIXED = 1.0
 # ============================================================================
 # When True: skip RC task, use linspace parameters below, minimal monitors
 # When False: standard RC mode with original parameters above
-SWEEP_ONLY_MODE = False
+SWEEP_ONLY_MODE = True
 
 # Sweep-specific parameter grid (used only when SWEEP_ONLY_MODE = True)
 SWEEP_Imid_values_nA = np.linspace(0.1, 0.5, 5)
