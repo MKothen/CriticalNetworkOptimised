@@ -592,7 +592,7 @@ summary_metrics = {
     ),
     'sigma': (
         np.nanmean(phase_diagram_results_sigma, axis=2),
-        'Branching Parameter (sigma, bin=2xIEI)',
+        'Branching Parameter (sigma, bin=IEI)',
         np.nanstd(phase_diagram_results_sigma, axis=2)
     ),
 }
